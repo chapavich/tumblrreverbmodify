@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="text:Google Analytics Web Property ID" content=""/>
+        {block:Description}
+        <meta name="description" content="{MetaDescription}" />
+        {/block:Description}
+        
+    	<meta name="author" content="Giraffic Themes | www.girafficthemes.com">
+		<meta name="copyright" content="Reverb Theme - Copyright William Rainbird 2014. All Rights Reserved." />
+		
+		<meta name="tumblr-theme" content="37205" />
+		
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+        <title>{block:TagPage}Posts Tagged &lsquo;{Tag}&rsquo; | {/block:TagPage}{block:PostSummary}{PostSummary} | {/block:PostSummary}{Title}</title>
+        
+        <meta name="color:Text" content="#222"/>
+        
+        <meta name="color:Header Background" content="#000"/>
+        <meta name="color:Nav Background" content="#fff"/>
+        <meta name="color:Nav Text" content="#000"/>
+        <meta name="color:Nav Text Hover" content="#479db1"/>
+        <meta name="color:Nav Title" content="#000"/>
+        <meta name="color:Nav Border" content="#e1e1e1"/>
+        
+        <meta name="color:Background" content="#f0f0f0"/>
+        
+        <meta name="color:Sidebar Title" content="#000"/>
+        <meta name="color:Sidebar Text" content="#222"/>
+        <meta name="color:Sidebar Border" content="#ddd"/>
+        <meta name="color:Sidebar Link" content="#2d798b"/>
+        <meta name="color:Sidebar Link Hover" content="#2d798b"/>
+        <meta name="color:Sidebar Link Underline" content="#ddd"/>
+        <meta name="color:Sidebar Box Background" content="#fff"/>
+        
+        <meta name="font:Title" content="'Open Sans', sans-serif"/>
+		<meta name="font:Navigation" content="'Open Sans', sans-serif"/>
+		<meta name="font:Secondary" content="'Open Sans', sans-serif"/>
+		<meta name="font:Body" content="'Open Sans', sans-serif"/>
+        
+        <meta name="text:Custom Title Font" content="" />
+		<meta name="text:Custom Navigation Font" content="" />
+		<meta name="text:Custom Secondary Font" content="" />
+		<meta name="text:Custom Body Font" content="" />
+        
+        <meta name="color:Main Link" content="#479db1"/>
+        <meta name="color:Main Link Hover" content="#479db1"/>
+        <meta name="color:Main Link Underline" content="#eee"/>
+        <meta name="color:Post Background" content="#fff"/>
+        <meta name="color:Post Title" content="#000"/>
+        <meta name="color:Post Border" content="#eee"/>
+        <meta name="color:Secondary Text" content="#9a9a9a"/>
+        <meta name="color:Nav Top Border" content="#e1e1e1"/>
+        
+        <meta name="image:Header Background" content="http://static.tumblr.com/qxrkgx6/PSDmmbja1/default-feature.jpg"/>
+        <meta name="image:Profile Picture" content=""/>
+        <meta name="image:Logo" content=""/>
+        
+        <meta name="image:Album Artwork" content=""/>
+		<meta name="image:Album Artwork Two" content=""/>
+		<meta name="image:Album Artwork Three" content=""/>
+		
+		<meta name="if:Show Album Artwork In iTunes Widget" content="0"/>
+		<meta name="if:Show Album Artwork In Bandcamp Widget" content="0"/>
+        
+        <meta name="text:Header Background Height" content="80" />
+        
+        <meta name="text:Facebook URL" content="" />
+		<meta name="text:Twitter Username" content="" />
+		<meta name="text:Instagram Username" content="" />
+		<meta name="text:Soundcloud URL" content="" />
+		<meta name="text:Soundcloud Username" content="" />
+		<meta name="text:Spotify URL" content="" />
+		<meta name="text:Hype Machine URL" content="" />
+		<meta name="text:Bandcamp URL" content="" />
+		<meta name="text:Google Plus URL" content="" />
+		<meta name="text:LastFM URL" content="" />
+		<meta name="text:Vimeo URL" content="" /> 
+		<meta name="text:YouTube Channel URL" content="" />
+		<meta name="text:Flickr URL" content="" />
+		<meta name="text:Pinterest Username" content="" />
+		<meta name="text:Website URL" content="" />
+		<meta name="text:Email Address" content="" />
+		
+		<meta name="text:Disqus Shortname" content=""/>
+		<meta name="text:Flickr ID" content="" />
+		<meta name="text:Flickr Photoset ID" content="" />
+		<meta name="text:Typekit ID" content="" />
+		<meta name="text:Twitter Widget Code" content="" />
+		<meta name="text:Artist Name" content=""/>
+		<meta name="text:Facebook App ID" content=""/>
+		<meta name="text:Songkick Artist ID" content="" />
+		<meta name="text:Bands In Town Artist Name" content="" />
+		<meta name="text:Bandcamp Embed Code" content="" />
+		<meta name="text:Big Cartel Username" content="" />
+		<meta name="text:iTunes Store Album Link" content="" />
+		<meta name="text:iTunes Store Album Link Two" content="" />
+		<meta name="text:iTunes Store Album Link Three" content="" />
+		<meta name="text:Instagram Access Token" content="" />
+		<meta name="text:Mailchimp Sign Up Embed Code" content="" />
+		<meta name="text:Copyright Text" content="" />
+		
+        <meta name="if:Stretch Header Background" content="1" />
+        <meta name="if:Black Header Overlay" content="0" />
+        <meta name="if:Use Pixels for Header Background Height" content="0" />
+        <meta name="if:Use Infinite Scroll" content="1" />
+        
+        <meta name="if:Show Album Artwork In iTunes Widget" content="0"/>
+        <meta name="if:Show Album Artwork In Bandcamp Widget" content="0"/>
+        
+        <meta name="text:Description Title" content="About" />
+		<meta name="text:Bandcamp Title" content="Bandcamp Player" />
+		<meta name="text:Facebook Title" content="Facebook" />
+		<meta name="text:Twitter Title" content="Latest from Twitter" />
+		<meta name="text:Flickr Title" content="Latest Photos" />
+		<meta name="text:iTunes Title" content="Album Out Now" />
+		<meta name="text:Soundcloud Title" content="Music Player" />
+		<meta name="text:Songkick Title" content="Upcoming Shows" />
+		<meta name="text:Bands In Town Title" content="Upcoming Shows" />
+		<meta name="text:Number of Bands In Town Shows on Sidebar" content="5" />
+		<meta name="text:Instagram Title" content="Instagram" />
+		<meta name="text:Big Cartel Title" content="Merchandise" />
+		<meta name="text:Mailchimp Title" content="Sign up to Mailing List" />
+		<meta name="text:Social Bar Sidebar Title" content="Elsewhere" />
+        
+        <meta name="if:Show Social Bar" content="0" />
+        <meta name="if:Show Soundcloud Player" content="0" />
+        <meta name="if:Hide Home Link In Navigation Bar" content="0" />
+		<meta name="if:Hide RSS Link In Navigation Bar" content="0" />
+		<meta name="if:Hide Archive Link In Navigation Bar" content="0" />
+		<meta name="if:Use Two Column On Large Screens" content="1" />
+		<meta name="if:Stretch Photo Posts" content="1" />
+		<meta name="if:Facebook Comments On" content="0" />
+		<meta name="if:Show Facebook Like Box In Sidebar" content="0"/>
+		<meta name="if:Show Full Facebook Activity Feed In Sidebar" content="0"/>
+		<meta name="if:Show Instagram Thumbnails" content="0" />
+		<meta name="if:Sidebar Items In Boxes" content="0" />
+		<meta name="if:Uppercase Sidebar Title" content="1" />
+		<meta name="if:Uppercase Nav" content="1" />
+		<meta name="if:Uppercase Post Title" content="1" />
+		<meta name="if:Bold Titles" content="1" />
+		<meta name="if:Bold Nav Text" content="1" />
+
+		<meta name="if:Sidebar On Right" content="0" />
+		<meta name="if:Nav On Own Line" content="0" />
+        
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        
+        <link rel="stylesheet" href="http://static.tumblr.com/qxrkgx6/RWPmgn2qa/normalize.min.css">
+        <link rel="stylesheet" href="http://static.tumblr.com/qxrkgx6/FxRmpq7k2/style.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        
+        <meta property="fb:app_id" content="{text:Facebook App ID}"/>
+        
+        <script src="http://static.tumblr.com/qxrkgx6/LuRmgn2rm/modernizr-2.6.2.min.js"></script>
+        {block:IfTypekitID}
+		<script type="text/javascript" src="http://use.typekit.com/{text:Typekit ID}.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		{/block:IfTypekitID}
+        
+        <style type="text/css">
+        	
+        	body {
+	        	background-color: {color:Background};
+	        	color: {color:Text};
+	        	font-family:{font:Body};
+			{block:IfCustomBodyFont}
+				font-family:{text:Custom Body Font};	
+			{/block:IfCustomBodyFont}
+        	}
+        	
+        	article.post, #notes ol li, #notes ol li a {
+	        	color: {color:Text};
+	        	
+        	}
+        	
+        	header {
+    			{block:IfStretchHeaderBackground}
+				
+					height: {text:Header Background Height}
+					
+					{block:IfNotUsePixelsforHeaderBackgroundHeight}%
+					{/block:IfNotUsePixelsforHeaderBackgroundHeight}
+					
+						{block:IfUsePixelsforHeaderBackgroundHeight}px
+						{/block:IfUsePixelsforHeaderBackgroundHeight};
+						
+	        	{/block:IfStretchHeaderBackground}
+        	}
+        	
+        	header #headerImage {
+	        	{block:IfNotStretchHeaderBackground}
+	        	background:  {color:Header Background} url('{image:Header Background}') !important;
+	        	{/block:IfNotStretchHeaderBackground}	
+			}
+			
+			header .headerContent .bar {
+				background-color: {color:Nav Background};
+			}
+			
+			header .headerContent .bar .barInner ul.pages li a,
+            header .headerContent .bar .barInner ul.pages li a:visited {
+            	color: {color:Nav Text};
+            	
+            }
+            
+            {block:IfNotUppercaseNav}
+	            header .headerContent .bar .barInner ul.pages {
+		            text-transform: none;
+	            }
+            {/block:IfNotUppercaseNav}
+            
+            header .headerContent .bar .barInner ul.pages li a:hover {
+            	color: {color:Nav Text Hover};
+            }
+            
+            header .headerContent .bar .barInner div.title a h1 {
+            	color: {color:Nav Title};
+            	{block:IfNotBoldNavText}
+				 font-weight: 500;
+	            {/block:IfNotBoldNavText}
+            }
+            
+            @media only screen and (max-width: 1035px)  {
+	            body.profile-pic-on header .headerContent .bar .barInner ul.pages,
+	            header .headerContent .bar .barInner ul.pages {
+	            	border-top: 1px solid {color:Nav Border};
+	            }
+            }
+            
+            
+            aside section.widget, section.widget.footer ul.linksSidebar li a {
+	            color:{color:Sidebar Text};
+	            border-bottom: 1px solid {color:Sidebar Border};
+            }
+            
+            aside section.widget a, aside section.widget a:visited, section.widget.footer ul.linksSidebar li a:hover {
+	            color: {color:Sidebar Link};
+	            border-bottom: 1px solid {color:Sidebar Link Underline};
+            }
+            
+            aside section.widget a.external {
+	            border-bottom: none;
+            }
+            
+            aside section.widget a.external span {
+	            border-bottom: 1px solid {color:Sidebar Link Underline};
+            }
+            
+            aside section.widget a:hover, aside section.widget a:visited:hover {
+            	color: {color:Sidebar Link Hover};
+	            border-bottom: 1px solid {color:Sidebar Link Hover};
+            }
+            
+            section.widget a.external:hover {
+	            border-bottom: none;
+            }
+            
+            section.widget a.external:hover span {	
+	            border-bottom: 1px solid {color:Sidebar Link Hover};
+            }
+            
+            aside section.widget h3.widgetTitle {
+	            color:{color:Sidebar Title};
+	            {block:IfNotUppercaseSidebarTitle}
+	            text-transform: none;
+	            {/block:IfNotUppercaseSidebarTitle}
+	            font-family:{font:Title};
+			{block:IfCustomTitleFont}
+				font-family: {text:Custom Title Font};
+			{/block:IfCustomTitleFont}
+			{block:IfNotBoldTitles}
+				 font-weight: 500;
+	            {/block:IfNotBoldTitles}
+            }
+            
+            
+            aside.boxes section.widget {
+	            background-color: {color:Sidebar Box Background};
+            }
+
+            aside.boxes section.widget h3.widgetTitle {
+	            border-bottom: 1px solid {color:Sidebar Border};
+            }
+
+            article.post .postMain p a,
+            article.post .postMain ul a,
+            article.post .postMain ol a,
+            article.post .postMain blockquote a,
+            article.post .postMain .source a,
+            .loadMoreGrams {
+	            color: {color:Main Link};
+	            border-bottom: 1px solid {color:Main Link Underline};
+            }
+            
+            #notes ol li a {
+	            text-decoration: none;
+	            border-bottom: 1px solid {color:Text}
+            }
+            
+			article.post .postMain p a:hover,
+			article.post .postMain ul a:hover,
+			article.post .postMain ol a:hover,
+			article.post .postMain blockquote a:hover,
+			article.post .postMain .source a:hover,
+			#notes ol li a:hover,
+			article.post ul.tags li a:hover,
+			.loadMoreGrams:hover
+			 {
+				color: {color:Main Link Hover};
+				border-bottom: 1px solid {color:Main Link Hover};
+			}
+			
+			body.index .meta .meta-list li a:hover,
+			body.permalink .meta .meta-list li a:hover,
+			.permalink .perm-pagination a:hover,
+			.index .pagination a:hover,
+			a.loadMore:hover {
+				color: {color:Main Link Hover};
+			}
+			
+			body.index .meta,
+			body.permalink .meta,
+			.permSection .shareLinksList,
+			.permSection .comments,
+			.permSection .facebookComments,
+			.permSection #notes {
+				border-top: 1px solid {color:Post Border};
+			}
+			
+			article.post blockquote {
+				border-left: 3px solid {color:Post Border};
+			}
+			
+			.post.chat ul.chat li {
+				border-bottom: 1px solid {color:Post Border};
+			}
+			
+			article.post,
+			.permalink .perm-pagination,
+			a.loadMore,
+			.index .pagination {
+				background-color: {color:Post Background};
+			}
+			
+			@media only screen and (min-width : 1388px) {
+				
+				body.permalink.multi-column .main-content #postsHolder article.post {
+					background-color: {color:Post Background};
+				}
+				
+				body.permalink.multi-column .main-content #postsHolder article.post.date-page {
+					background-color: transparent;
+				}
+				
+				body.multi-column .main-content #postsHolder article.post {
+					background-color: {color:Post Background};
+				}
+				
+				body.permalink.multi-column .main-content #postsHolder article.post .postMain,
+				body.permalink.multi-column .main-content #postsHolder article.post .photoImg,
+				body.permalink.multi-column .main-content #postsHolder article.post .photo-slideshow,
+				body.permalink.multi-column .main-content #postsHolder article.post .mainVid,
+				body.permalink.multi-column .main-content #postsHolder article.post .audioHolder,
+				body.permalink.multi-column .main-content #postsHolder article.post .meta ul,
+				body.permalink.multi-column .main-content #postsHolder article.post .permSection {
+					background-color: {color:Post Background};
+				}
+				
+				body.permalink.multi-column .main-content #postsHolder article.post .meta {
+					border-top: none;
+				}
+				
+			}
+			
+			article.post h3.title a, article.post h3.title a:visited, .post.answer h3.title, .permalink .shareLinksList h2, #notes h2, .commentsHeading {
+				color: {color:Post Title};
+				{block:IfNotUppercasePostTitle}
+				 text-transform: none;
+	            {/block:IfNotUppercasePostTitle}
+	            font-family:{font:Title};
+			{block:IfCustomTitleFont}
+				font-family: {text:Custom Title Font};
+			{/block:IfCustomTitleFont}
+			{block:IfNotBoldTitles}
+				 font-weight: 500;
+	            {/block:IfNotBoldTitles}
+			}
+			
+			article.quote .postMain .quoteText, article.quote .postMain .source {
+				font-family:{font:Title};
+			{block:IfCustomTitleFont}
+				font-family: {text:Custom Title Font};
+			{/block:IfCustomTitleFont}
+			{block:IfNotBoldTitles}
+				 font-weight: 500;
+	            {/block:IfNotBoldTitles}
+			}
+			
+			article.post ul.tags li,
+			article.post ul.tags li a,
+			body.index .meta .meta-list li a,
+			body.permalink .meta .meta-list li a,
+			.index .pagination,
+			.index .pagination a,
+			.permalink .perm-pagination a,
+			a.loadMore {
+				color: {color:Secondary Text};
+							font-family:{font:Secondary};
+			{block:IfCustomSecondaryFont}
+					font-family:{text:Custom Secondary Font};
+			{/block:IfCustomSecondaryFont}
+			}
+			
+
+			article.post ul.tags li a:hover,	
+			body.index .meta .meta-list li a:hover,
+			body.permalink .meta .meta-list li a:hover,
+			.index .pagination a:hover,
+			.permalink .perm-pagination a:hover,
+			a.loadMore:hover {
+				color: {color:Main Link Hover};
+			}
+			
+
+			/** nav **/
+			
+			header .headerContent .bar .barInner ul.pages {
+			font-family:{font:Navigation};
+			{block:IfCustomNavigationFont}
+			font-family: {text:Custom Navigation Font};
+			{/block:IfCustomNavigationFont}
+			}
+			
+			/** nav top border **/
+			
+			@media only screen and (min-width: 1036px) {
+				body.nav-sep header .headerContent .bar .barInner ul.pages, body.social-on.nav-sep header .headerContent .bar .barInner ul.pages, body.profile-pic-on.nav-sep header .headerContent .bar .barInner ul.pages, body.soundcloud-on.nav-sep header .headerContent .bar .barInner ul.pages {
+					border-top: 1px solid {color:Nav Top Border};
+				}
+			}
+            
+            @media only screen and (max-width: 767px) {
+            	 body header .headerContent .bar .barInner ul.pages, body.social-on header .headerContent .bar .barInner ul.pages, body.profile-pic-on header .headerContent .bar .barInner ul.pages, body.soundcloud-on header .headerContent .bar .barInner ul.pages {
+            	 	border-top: 1px solid {color:Nav Top Border};
+            	 }
+            }
+            
+            @media only screen and (max-width: 1035px) {
+	            body.profile-pic-on header .headerContent .bar .barInner ul.pages, header .headerContent .bar .barInner ul.pages {
+border-top: 1px solid {color:Nav Top Border};
+}
+            }
+            
+            {CustomCSS}
+            
+
+            
+            
+        </style>
+            
+    </head>
+
+    <body class="{block:IndexPage}index{/block:IndexPage} 
+				 {block:PermalinkPage}permalink{/block:PermalinkPage} 
+				 {block:IfProfilePictureImage}profile-pic-on{/block:IfProfilePictureImage} 
+				 {block:IfNotProfilePictureImage}profile-pic-off{/block:IfNotProfilePictureImage}   
+				 {block:IfShowSoundcloudPlayer}{block:IfSoundcloudUsername}soundcloud-on{/block:IfSoundcloudUsername}{/block:IfShowSoundcloudPlayer} 
+				 {block:IfNotShowSoundcloudPlayer}soundcloud-off{/block:IfNotShowSoundcloudPlayer}  
+				 {block:IfShowSocialBar}social-on{/block:IfShowSocialBar} {block:IfNotShowSocialBar}social-off{/block:IfNotShowSocialBar} 
+				 {block:IfNotUseTwoColumnOnLargeScreens}single-column{/block:IfNotUseTwoColumnOnLargeScreens}  
+				 {block:IfUseTwoColumnOnLargeScreens}multi-column{/block:IfUseTwoColumnOnLargeScreens} 
+				 {block:IfSidebarOnRight}sidebar-right{/block:IfSidebarOnRight} 
+				 {block:IfUseInfiniteScroll}infScroll-on{/block:IfUseInfiniteScroll} 
+				 {block:IfNotUseInfiniteScroll}infScroll-off{/block:IfNotUseInfiniteScroll} 
+				 {block:IfNotNavOnOwnLine}nav-float{/block:IfNotNavOnOwnLine} 
+				 {block:IfNavOnOwnLine}nav-sep{/block:IfNavOnOwnLine}">
+    
+    <!-- Tumblr Theme #37205 -->
+    
+        <!-- enable fb comments -->
+        {block:ifFacebookCommentsOn}<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>{/block:ifFacebookCommentsOn}
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+        
+        <header class="{block:IfBlackHeaderOverlay}black{/block:IfBlackHeaderOverlay}  
+					   {block:IfStretchHeaderBackground}stretch-on{/block:IfStretchHeaderBackground} 
+					   {block:IfNotStretchHeaderBackground}no-stretch{/block:IfNotStretchHeaderBackground} ">
+        	
+        	<div id="headerImage">
+        	
+        		<div class="overlay"></div>
+        	
+        	</div>
+        	
+        	
+        	<div class="headerContent">
+        	
+        		<div class="headerInner">
+        		
+        			{block:IfProfilePictureImage}
+        				<div class="profilePicture">
+        					<div class="inner">
+	        					<a href="/">
+		        					<img src="{image:Profile Picture}" />
+	        					</a>
+        					</div>
+        				</div>
+        			{/block:IfProfilePictureImage}
+        			
+        			{block:IfShowSoundcloudPlayer}
+					{block:IfSoundcloudUsername}
+					<!-- SOUNDCLOUD WIDGET -->
+						<div class="soundcloud">
+
+							<div class="soundCloudLoader"><img src="http://static.tumblr.com/qxrkgx6/x8Mmhpgaq/loader.gif" /></div>
+							
+							<div class="soundcloudPlayer">
+							
+								<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+								
+										<div id="jp_container_1" class="jp-audio">
+											<div class="jp-type-playlist">
+												<div class="jp-gui jp-interface">
+												
+													<ul class="jp-controls">
+														<li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+														<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+														<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+														<li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+													</ul>
+													
+													
+													<div>
+												
+															
+														<div class="jp-time-holder">
+														
+															
+															<div class="jp-current-time"></div>
+															
+															<div class="jp-progress">
+																<div class="jp-seek-bar">
+																	<div class="jp-play-bar"></div>
+																</div>
+															</div>
+															
+															<div class="jp-duration"></div>
+														</div>
+			
+													</div>
+			
+			
+												</div>
+												
+												<div class="jp-playlist">
+													<ul style="overflow: auto;">
+														<li></li>
+													</ul>
+												</div>
+										
+												<div class="jp-no-solution">
+													<span>Update Required</span>
+													To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+												</div>
+											</div>
+										</div>
+										
+								<!--<a href="http://www.soundcloud.com" class="powerCloud" target="_blank"><img src="http://static.tumblr.com/qxrkgx6/Ii3lw2pdd/soundcloudpower.png" alt="Powered by Soundcloud" /></a>-->
+							
+							</div> 	 	 	   
+							
+				
+						</div>
+					<!-- END SOUNDCLOUD WIDGET -->	
+					{/block:IfSoundcloudUsername}
+					{/block:IfShowSoundcloudPlayer}
+
+        		
+			        {block:IfShowSocialBar}
+					<ul id="socialBar">
+
+						{block:IfEmailAddress}
+						<li><a href="mailto:{text:Email Address}" class="socialLink" id="email" target="_blank" title="Email"></a></li>
+						{/block:IfEmailAddress}
+						
+						{block:IfWebsiteURL}
+						<li><a href="{text:Website URL}" id="website" target="_blank" title="View Website"></a></li>
+						{/block:IfWebsiteURL}
+		
+						
+						{block:IfPinterestUsername}
+						<li><a href="http://pinterest.com/{text:Pinterest Username}"  id="pinterest" target="_blank" title="View Pinterest profile"></a></li>
+						{/block:IfPinterestUsername}
+						
+						{block:IfFlickrURL}
+						<li><a href="{text:Flickr URL}" id="flickr" target="_blank" title="View Flickr Profile"></a></li>
+						{/block:IfFlickrURL}	
+						
+						{block:IfYouTubeChannelURL}
+						<li><a href="{text:YouTube Channel URL}"  id="youtube" target="_blank" title="View YouTube Channel"></a></li>
+						{/block:IfYouTubeChannelURL}
+						
+						{block:IfVimeoURL}
+						<li><a href="{text:Vimeo URL}"  id="vimeo" target="_blank" title="View Vimeo profile"></a></li>
+						{/block:IfVimeoURL}	
+						
+						{block:IfLastFMURL}
+						<li><a href="{text:LastFM URL}"  id="lastfm" target="_blank"></a></li>
+						{/block:IfLastFMURL}
+						
+						{block:IfGooglePlusURL}
+						<li><a href="{text:Google Plus URL}" id="gplus" target="_blank" title="View Google Plus Profile"></a></li>
+						{/block:IfGooglePlusURL}
+						
+						{block:IfBandcampURL}
+						<li><a href="{text:Bandcamp URL}" id="bandcampSocial" target="_blank" title="View Bandcamp Page"></a></li>
+						{/block:IfBandcampURL}
+						
+						{block:IfHypeMachineURL}
+						<li><a href="{text:Hype Machine URL}" id="hypemachine" target="_blank" title="View Hype Machine profile"></a></li>
+						{/block:IfHypeMachineURL}
+						
+						{block:IfSpotifyURL}
+						<li><a href="{text:Spotify URL}" id="spotify" target="_blank" title="View Spotify Profile"></a></li>
+						{/block:IfSpotifyURL}
+						
+						{block:IfSoundcloudUsername}
+						<li><a href="http://www.soundcloud.com/{text:Soundcloud Username}" class="socialLink" id="soundcloudSocial" target="_blank" title="View Soundcloud Profile"></a></li>
+						{/block:IfSoundcloudUsername}
+						
+						{block:IfInstagramUsername}
+						<li><a href="http://instagram.com/{text:Instagram Username}" class="socialLink" id="instagram" target="_blank" title="View Instagram"></a></li>
+						{/block:IfInstagramUsername}
+						
+						{block:IfTwitterUsername}
+						<li><a href="http://twitter.com/{text:Twitter Username}" class="socialLink" id="twitter" target="_blank" title="Follow on Twitter"></a></li>
+						{/block:IfTwitterUsername}
+						
+						{block:IfFacebookURL}
+						<li><a href="{text:Facebook URL}" id="facebook" target="_blank" title="View Facebook Page"></a></li>
+						{/block:IfFacebookURL}
+
+						
+					</ul>
+					{/block:IfShowSocialBar}
+        		
+        		</div>
+        		
+        	
+	        	<div class="bar">
+	        	
+	        		<div class="barInner">
+	        		
+		        		{block:IfLogoImage}
+				
+						<div class="title logo">
+						
+							<a href="/"><img src="{image:Logo}" /></a>
+							        
+						</div>
+						
+						{/block:IfLogoImage}
+						
+						{block:IfNotLogoImage}
+						
+						<div class="title">
+						
+							<a href="/"><h1>{Title}</h1></a>
+							        
+						</div>
+						
+						{/block:IfNotLogoImage}
+						
+						
+						<ul class="pages">
+	
+						{block:IfNotHideHomeLinkInNavigationBar}<li><a href="/" class="archive">Home</a></li>{/block:IfNotHideHomeLinkInNavigationBar}
+						
+						{block:HasPages} 
+						
+							{block:Pages}<li><a href="{URL}">{Label}</a>{/block:Pages}
+							
+						{/block:HasPages}
+							
+							{block:SubmissionsEnabled}<li><a href="/submit" class="archive">{SubmitLabel}</a></li>{/block:SubmissionsEnabled}
+							
+							{block:AskEnabled}<li><a href="/ask" class="archive">{AskLabel}</a></li>{/block:AskEnabled}
+							
+							{block:IfNotHideArchiveLinkInNavigationBar}<li><a href="/archive" class="archive">Archive</a></li>{/block:IfNotHideArchiveLinkInNavigationBar}
+							{block:IfNotHideRSSLinkInNavigationBar}<li><a href="{RSS}" class="rss">RSS</a></li>{block:IfNotHideRSSLinkInNavigationBar}	
+					
+						</ul>
+					
+					</div>
+	        	
+	        	</div>
+        	
+        	</div>
+        	
+        	<!--
+            <h1><a href="/">{Title}</a></h1>
+    
+            {block:Description}
+                <p id="description">{Description}</p>
+            {/block:Description}
+            
+            
+            {block:HasPages}
+                <nav class="nav">
+    
+                    <ul>
+                        {block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}
+                    </ul>
+                
+                </nav>
+            {/block:HasPages}
+            -->
+
+        </header>
+        
+        <section class="main-content">
+	        
+	        
+	        <section id="postsHolder">
+	        	
+	        	<div class="initLoader"><img src="http://static.tumblr.com/qxrkgx6/yPWmjna2b/24-0.gif" /></div>
+	        
+		        <div id="posts" class="">
+	
+		            {block:Posts}
+		                {block:Text}
+		                    <article class="post text {block:Date}date-page{/block:Date}">
+		                    	
+		                    	<section class="postMain">
+		                    	
+			                        {block:Title}
+			                            <h3 class="title"><a href="{Permalink}">{Title}</a></h3>
+			                        {/block:Title}
+			
+			                        {Body}	
+		                       
+		                {/block:Text}
+		
+		                {block:Photo}
+		                    <article class="post photo {block:Date}date-page{/block:Date}">
+		                    	
+		                    	<div class="photoImg {block:IfStretchPhotoPosts}stretch{/block:IfStretchPhotoPosts}">
+			                        	{LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>{LinkCloseTag}
+			                        </div>
+		                    	
+		                    	<section class="postMain {block:HasTags}hasTags{/block:HasTags} {block:Caption}hasCaption{/block:Caption}">
+		                    	
+			                        {block:Caption}
+			                            <div class="caption">{Caption}</div>
+			                        {/block:Caption}
+		                        
+		                {/block:Photo}
+		
+		                {block:Photoset}
+		                    <article class="post photoset {block:Date}date-page{/block:Date}">
+		                    	
+	                    		<div class="photo-slideshow" id="photoset_{PostID}" data-layout="{PhotosetLayout}">
+
+								  {block:Photos}
+								    <div class="photo-data">
+								      <div class="pxu-photo">
+								      
+								      	 <a class="tumblr-box" rel="post-{PostID}" href="{PhotoURL-HighRes}">
+								      	 
+								        <img alt="{PhotoAlt}" src="{PhotoURL-HighRes}" data-highres="{PhotoURL-HighRes}" data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}" class="{block:Exif}exif-yes {/block:Exif}{block:Caption}caption-yes{/block:Caption}" {block:Exif}data-camera="{block:Camera}{Camera}{/block:Camera}" data-iso="{block:ISO}{ISO}{/block:ISO}" data-aperture="{block:Aperture}{Aperture}{/block:Aperture}" data-exposure="{block:Exposure}{Exposure}{/block:Exposure}" data-focal="{block:FocalLength}{FocalLength}{/block:FocalLength}"{/block:Exif} {block:Caption}data-caption="{Caption}"{/block:Caption}>
+								        
+								      	 </a>
+								        
+								      </div>
+								      <div class="icons">
+								       
+								          <span class="zoom pictos">s</span>
+								        
+								      </div>
+								    </div>
+								  {/block:Photos}
+								
+								</div><!-- close SLIDESHOW -->
+		                    	
+		                    	<section class="postMain {block:HasTags}hasTags{/block:HasTags} {block:Caption}hasCaption{/block:Caption} ">
+			
+			                        {block:Caption}
+			                            <div class="caption">{Caption}</div>
+			                        {/block:Caption}
+		                    	
+		                {/block:Photoset}
+		
+		                {block:Quote}
+		                    <article class="post quote {block:Date}date-page{/block:Date}">
+		                    
+		                    	<section class="postMain">
+		                    	
+			                        <div class="quoteText">"{Quote}"</div>
+			
+			                        {block:Source}
+			                            <div class="source">- {Source}</div>
+			                        {/block:Source}
+		                        
+	
+		                {/block:Quote}
+		
+		                {block:Link}
+		                    <article class="post link {block:Date}date-page{/block:Date}">
+		                    	<section class="postMain">
+		                    	
+			                        <h3 class="title"><a href="{URL}" class="link" {Target}>{Name} <i class="p-icon">]</i>	</a></h3>
+			
+			                        {block:Description}
+			                            <div class="description">{Description}</div>
+			                        {/block:Description}
+		                    	
+		                {/block:Link}
+		
+		                {block:Chat}
+		                    <article class="post chat {block:Date}date-page{/block:Date}">
+		                    
+		                    	<section class="postMain">
+		                    	
+			                        {block:Title}
+			                            <h3 class="title"><a href="{Permalink}">{Title}</a></h3>
+			                        {/block:Title}
+			
+			                        <ul class="chat">
+			                            {block:Lines}
+			                                <li class="{Alt} user_{UserNumber}">
+			                                    {block:Label}
+			                                        <span class="label">{Label}</span>
+			                                    {/block:Label}
+			
+			                                    {Line}
+			                                </li>
+			                            {/block:Lines}
+			                        </ul>
+		                       
+		                {/block:Chat}
+		
+		                {block:Video}
+		                    <article class="post video {block:Date}date-page{/block:Date}" id="{PostID}">
+		                    	
+		                    	<div class="mainVid">{Video-700}</div>
+		                    	
+		                    	<section class="postMain {block:HasTags}hasTags{/block:HasTags} {block:Caption}hasCaption{/block:Caption}">
+		                    	
+			                        {block:Caption}
+			                            <div class="caption">{Caption}</div>
+			                        {/block:Caption}
+		                        
+		                {/block:Video}
+		
+		                {block:Audio}
+		                    <article class="post audio {block:Date}date-page{/block:Date}">
+
+		                    	<div class="audioHolder">
+			                    	<div class="audio-250 audioEmbed">{AudioEmbed-250}</div>
+									<div class="audio-400 audioEmbed">{AudioEmbed-400}</div>
+									<div class="audio-500 audioEmbed">{AudioEmbed-500}</div>
+									<div class="audio-640 audioEmbed">{AudioEmbed-640}</div>
+		                    	</div>
+		                    	
+		                    	<section class="postMain {block:HasTags}hasTags{/block:HasTags} {block:Caption}hasCaption{/block:Caption}">
+
+			                        {block:Caption}
+			                            <div class="caption">{Caption}</div>
+			                        {/block:Caption}
+		                        
+		                {/block:Audio}
+		                
+		                 {block:Answer}
+		                    <article class="post answer {block:Date}date-page{/block:Date}">
+		                    	
+		                    	<section class="postMain">
+		                    	
+			                        <h3 class="title">{Question}</h3>
+			                        <p class="asker">- Asked by {Asker}</p>
+			
+			                        <div class="caption">{Answer}</div>
+		                       
+		                {/block:Answer}
+		                
+            			{block:HasTags}
+			        	 <ul class="tags">
+			        	 	<li>Tags: </li>
+			        	 	
+				            {block:Tags}
+				                   <li> <a href="{TagURL}">{Tag}</a></li>  
+				            {/block:Tags}
+			        	    
+			        	 </ul> 	 	 	   
+			        	{/block:HasTags}
+			        	
+			        	<!-- END POST MAIN -->
+			        	</section>
+			        	<!-- END POST MAIN-->
+		                
+	                	<!-- start of meta -->
+	                	{block:Date}
+	                	<section class="meta {block:ifDisqusShortname}commentsOn disqus{/block:ifDisqusShortname} 
+											 {block:ifFacebookCommentsOn}commentsOn{/block:ifFacebookCommentsOn} 
+											 {block:NoteCount}notesOn{/block:NoteCount} ">
+
+		                	<ul class="meta-list {block:IndexPage}indexPage{/block:IndexPage} standard">
+						    	
+						    	<li class="permalink">
+						    		<a href="{Permalink}"><i class="p-icon">t</i>{TimeAgo}</a>
+						    	</li>	 	 	 	   
+						    	
+						    	
+						    	{block:NoteCount}
+						    	<li class="postNotes view1388">
+						    		<a href="{block:IndexPage}{Permalink}{/block:IndexPage}#notes"><i class="p-icon">k</i>{NoteCount} <span class="text">notes</span></a>
+						    	</li>
+						    	{/block:NoteCount}
+						    	{block:ifDisqusShortname}
+									{block:IndexPage}
+									<li class="commentsLink view1388">
+										<a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments</a>
+									</li>
+									{/block:IndexPage}
+								{/block:ifDisqusShortname}
+								
+								{block:ifFacebookCommentsOn}
+									<li class="commentsLink view1388">
+										<a href="{Permalink}#facebook_thread"><fb:comments-count href="{Permalink}"></fb:comments-count> <span class="text">comments</span></a>		
+									</li> 	 	 	   
+								{/block:ifFacebookCommentsOn}
+						    	
+						    	{block:PermalinkPage}	
+
+						        	{block:RebloggedFrom}<li class="reblog"><a href="{ReblogParentURL}"><i class="p-icon">0</i>Reblogged from {ReblogParentName}</a></li>{/block:RebloggedFrom}
+									
+									{block:ContentSource}<li class="source"><a href="{SourceURL}"><i class="p-icon">1</i>{SourceTitle}</a></li>{/block:ContentSource}
+
+						    	{/block:PermalinkPage}
+						    
+						    </ul>
+						    
+						    <ul class="meta-list commentsNotes">
+						    
+						    							    	
+						    	{block:NoteCount}
+						    	<li class="postNotes">
+						    		<a href="{block:IndexPage}{Permalink}{/block:IndexPage}#notes"><i class="p-icon">k</i>{NoteCount} <span class="text">notes</span></a>
+						    	</li>
+						    	{/block:NoteCount}
+						    	
+						    	{block:ifDisqusShortname}
+						    		<!--
+									<li class="commentsLink">
+										<a class="dsq-comment-count" href="#disqus_thread">Comments</a>
+									</li>
+									-->
+									
+									{block:IndexPage}
+									<li class="commentsLink">
+										<a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments</a>
+									</li>
+
+									{/block:IndexPage}
+					
+								{/block:ifDisqusShortname}
+								
+								
+								{block:ifFacebookCommentsOn}
+									<li class="commentsLink">
+										<a href="{Permalink}#facebook_thread"><fb:comments-count href="{Permalink}"></fb:comments-count> <span class="text">comments</span></a>
+										
+									</li>
+								
+								{/block:ifFacebookCommentsOn}
+						    
+						    </ul>
+						    	
+						    	<!--
+							    {block:IndexPage}
+							        <a class="shareBtn">Share <i class="p-icon">R</i></a>
+							    {/block:IndexPage}
+							    -->
+							    
+							    
+						{block:PermalinkPagination}
+						    <div class="perm-pagination view1388">
+						        {block:PreviousPost}
+						            <a href="{PreviousPost}" class="prevPost"><i class="p-icon">[</i> Previous</a>
+						        {/block:PreviousPost}
+						        
+						        {block:NextPost}
+						            <a href="{NextPost}" class="nextPost">Next <i class="p-icon">]</i></a>
+						        {/block:NextPost}
+						    </div> 	 	 	   
+						{/block:PermalinkPagination}
+	                	
+	                	</section> 
+	                	{/block:Date}
+	                	<!-- END META -->
+		                					
+						
+	                {block:PermalinkPage}
+	                  
+
+	                  
+	                  <!--<div style="clear:both;" class="clear1388"></div>-->
+	                                      
+	                  <div class="permSection">
+	                  {block:Date}
+                    	 <div class="shareLinksList">
+                    	 	<h2 class="commentsHeading">Share</h2>
+							<ul>
+								<li class="fbShare">
+									<div class="fbOuter">
+										<iframe src="//www.facebook.com/plugins/like.php?href={Permalink}&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+									</div>
+								</li>	
+								<li class="twitterShare">
+									<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="{Permalink}">Tweet</a>
+									
+								</li>						
+								<li class="gpShare">
+									<g:plusone size="medium" href="{Permalink}"></g:plusone>
+								</li>
+								{block:Photo}
+								<li class="pin">
+									<a href="http://pinterest.com/pin/create/button/?url={Permalink}&media={PhotoURL-HighRes}" class="pin-it-button" count-layout="none"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>
+								</li>
+								{/block:Photo}
+							</ul>	
+			            </div>
+
+                      	{block:IfDisqusShortname}
+              	        	<div class="comments disqus">
+              	        		<h2 class="commentsHeading">Recent Comments</h2>
+	              		        	<div id="disqus_thread"></div>
+									<script type="text/javascript">
+									    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+									    var disqus_shortname = '{text:Disqus Shortname}'; // Required - Replace example with your forum shortname
+									
+									    /* * * DON'T EDIT BELOW THIS LINE * * */
+									    (function() {
+									        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+									        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+									        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+									    })();
+									</script>
+									<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+									<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+              	        	</div> 	 	 	    	 	   
+                      	{/block:IfDisqusShortname}
+
+                      	{block:ifFacebookCommentsOn}
+              	        	<div class="facebookComments">
+	              	        	<h2 class="commentsHeading"><fb:comments-count href="{Permalink}"></fb:comments-count> Comments</h2>
+	              	        	<a name="facebook_thread" id="facebook_thread"><!-- --></a>
+	              	        	{block:PermalinkPage}
+	              	        	<fb:comments href="{Permalink}" num_posts="20" width="476" class="fb-comments"></fb:comments>
+	              	        	{/block:PermalinkPage}
+              	        	</div>
+                      	{/block:ifFacebookCommentsOn}
+
+						{block:PostNotes}
+							<div id="notes">
+								 <div class="seperator"></div>
+								<h2 class="noteHeading">{NoteCount} Notes</h2>
+								{PostNotes}
+							</div> 	 	 	   
+						{/block:PostNotes} 		
+	                   {/block:Date}
+	                  	
+	                  </div>
+
+	            {/block:PermalinkPage}	
+		                
+                </article><!-- end post article -->
+                
+                {block:PermalinkPagination}
+	                <div class="perm-pagination">
+	                    {block:PreviousPost}
+	                        <a href="{PreviousPost}" class="prevPost"><i class="p-icon">[</i> Previous</a>
+	                    {/block:PreviousPost}
+	                    
+	                    {block:NextPost}
+	                        <a href="{NextPost}" class="nextPost">Next <i class="p-icon">]</i></a>
+	                    {/block:NextPost}
+	                </div>
+                {/block:PermalinkPagination}
+		                
+		                
+		        {/block:Posts}
+		        </div> <!-- end #posts -->
+		        
+		        {block:IndexPage}
+		        <a class="loadMore">
+		        	Load More
+		        </a> 	 	 	   
+		        
+				<div class="pagination">
+
+					{block:PreviousPage}
+				        <a href="{PreviousPage}" class="prevPage more_link"><i class="p-icon">[</i> New</a>
+				    {/block:PreviousPage}
+				    
+				    <span>Page {CurrentPage} of {TotalPages}</span>
+
+				    {block:NextPage}
+				        <a href="{NextPage}" class="nextPage more_link">Old <i class="p-icon">]</i></a>
+				    {/block:NextPage}
+				    
+				</div>
+		        
+		        {/block:IndexPage}
+		        
+	        </section> <!-- end postHolder -->
+	        
+	        
+	        <aside class="{block:IfSidebarItemsInBoxes}boxes{/block:IfSidebarItemsInBoxes}">
+        		
+        		{block:Description}
+        		<section class="widget">
+        		
+        			<h3 class="widgetTitle">{text:Description Title}</h3>
+        			
+        			{block:IfSidebarItemsInBoxes}<div class="widgetMain">{/block:IfSidebarItemsInBoxes}
+        			
+        			<p>
+        			{Description}
+        			</p> 	 	 	   
+        			
+        			{block:IfSidebarItemsInBoxes}</div>{/block:IfSidebarItemsInBoxes}
+        		
+        		</section>
+        		{/block:Description}
+        		
+        		
+        		{block:IfShowSocialBar}
+        		<section class="widget social" id="socialAside">
+        		
+        			<h3 class="widgetTitle">{text:Social Bar Sidebar Title}</h3>
+        			
+        			{block:IfSidebarItemsInBoxes}<div class="widgetMain">{/block:IfSidebarItemsInBoxes}
+        			<ul id="socialBarAside">
+
+						{block:IfFacebookURL}
+						<li><a href="{text:Facebook URL}" id="facebook" target="_blank" title="View Facebook Page"></a></li> 	 	 	   
+						{/block:IfFacebookURL}
+						
+						{block:IfTwitterUsername}
+						<li><a href="http://twitter.com/{text:Twitter Username}" class="socialLink" id="twitter" target="_blank" title="Follow on Twitter"></a></li>
+						{/block:IfTwitterUsername}
+						
+						{block:IfInstagramUsername}
+						<li><a href="http://instagram.com/{text:Instagram Username}" class="socialLink" id="instagram" target="_blank" title="View Instagram"></a></li>
+						{/block:IfInstagramUsername}
+						
+						{block:IfSoundcloudUsername}
+						<li><a href="http://www.soundcloud.com/{text:Soundcloud Username}" class="socialLink" id="soundcloudSocial" target="_blank" title="View Soundcloud Profile"></a></li>
+						{/block:IfSoundcloudUsername}
+						
+						{block:IfSpotifyURL}
+						<li><a href="{text:Spotify URL}" id="spotify" target="_blank" title="View Spotify Profile"></a></li>
+						{/block:IfSpotifyURL}
+						
+						{block:IfHypeMachineURL}
+						<li><a href="{text:Hype Machine URL}" id="hypemachine" target="_blank" title="View Hype Machine profile"></a></li>
+						{/block:IfHypeMachineURL}
+						
+						{block:IfBandcampURL}
+						<li><a href="{text:Bandcamp URL}" id="bandcampSocial" target="_blank" title="View Bandcamp Page"></a></li>
+						{/block:IfBandcampURL}
+						
+						{block:IfGooglePlusURL}
+						<li><a href="{text:Google Plus URL}" id="gplus" target="_blank" title="View Google Plus Profile"></a></li> 	 	 	   
+						{/block:IfGooglePlusURL}
+						
+						{block:IfLastFMURL}
+						<li><a href="{text:LastFM URL}"  id="lastfm" target="_blank"></a></li>
+						{/block:IfLastFMURL}
+						
+						{block:IfVimeoURL}
+						<li><a href="{text:Vimeo URL}"  id="vimeo" target="_blank" title="View Vimeo profile"></a></li>
+						{/block:IfVimeoURL}
+						
+						{block:IfYouTubeChannelURL}
+						<li><a href="{text:YouTube Channel URL}"  id="youtube" target="_blank" title="View YouTube Channel"></a></li>
+						{/block:IfYouTubeChannelURL}
+						
+						{block:IfFlickrURL}
+						<li><a href="{text:Flickr URL}" id="flickr" target="_blank" title="View Flickr Profile"></a></li>
+						{/block:IfFlickrURL}
+						
+						{block:IfPinterestUsername}
+						<li><a href="http://pinterest.com/{text:Pinterest Username}"  id="pinterest" target="_blank" title="View Pinterest profile"></a></li>
+						{/block:IfPinterestUsername}
+						
+						{block:IfWebsiteURL}
+						<li><a href="{text:Website URL}" id="website" target="_blank" title="View Website"></a></li>
+						{/block:IfWebsiteURL}
+						
+						{block:IfEmailAddress}
+						<li><a href="mailto:{text:Email Address}" class="socialLink" id="email" target="_blank" title="Email"></a></li>
+						{/block:IfEmailAddress}
+
+						
+					</ul> 	 	 	   
+					{block:IfSidebarItemsInBoxes}</div>{/block:IfSidebarItemsInBoxes}
+        		
+        		</section> 	 	 	   
+        		{/block:IfShowSocialBar}
+        		
+			<!-- iTUNES WIDGET -->
+			{block:IfiTunesStoreAlbumLink}
+			<section class="widget itunes">
+				
+				<h3 class="widgetTitle">{text:iTunes Title}</h3>
+				
+				{block:IfSidebarItemsInBoxes}<div class="widgetMain">{/block:IfSidebarItemsInBoxes}
+				
+				{block:IfShowAlbumArtworkIniTunesWidget}
+					{block:IfAlbumArtworkImage}
+						<div class="albumArt">
+							<a href="{text:iTunes Store Album Link}" target="itunes_store"><img src="{image:Album Artwork}" /></a>
+							</div>
+					{/block:IfAlbumArtworkImage}
+				{/block:IfShowAlbumArtworkIniTunesWidget}
+	
+				<a href="{text:iTunes Store Album Link}" target="itunes_store" class="iTunesLink external"><span>Download on iTunes</span></a>
+				
+				{block:IfiTunesStoreAlbumLinkTwo}
+					{block:IfShowAlbumArtworkIniTunesWidget}
+						{block:IfAlbumArtworkTwoImage}
+							<div class="albumArt">
+								<a href="{text:iTunes Store Album Link Two}" target="itunes_store"><img src="{image:Album Artwork Two}" /></a>
+								</div>
+						{/block:IfAlbumArtworkTwoImage}
+					{/block:IfShowAlbumArtworkIniTunesWidget}
+	
+					<a href="{text:iTunes Store Album Link Two}" target="itunes_store" class="iTunesLink external"><span>Download on iTunes</span></a>
+				{/block:IfiTunesStoreAlbumLinkTwo}
+				
+				{block:IfiTunesStoreAlbumLinkThree}
+				
+					{block:IfShowAlbumArtworkIniTunesWidget}
+					
+						{block:IfAlbumArtworkThreeImage}
+							<div class="albumArt">
+								<a href="{text:iTunes Store Album Link Three}" target="itunes_store"><img src="{image:Album Artwork Three}" /></a>
+								</div>
+						{/block:IfAlbumArtworkThreeImage}
+						
+					{/block:IfShowAlbumArtworkIniTunesWidget}
+	
+					<a href="{text:iTunes Store Album Link Three}" target="itunes_store" class="iTunesLink external"><span>Download on iTunes</span></a>
+				{/block:IfiTunesStoreAlbumLinkThree}
+				{block:IfSidebarItemsInBoxes}</div>{/block:IfSidebarItemsInBoxes}
+	
+			</section>
+			{/block:IfiTunesStoreAlbumLink}
+			<!-- END iTUNES WIDGET -->
+        	
+        	
+        	<!-- BANDCAMP WIDGET -->
+			{block:IfBandcampEmbedCode}
+			
+				<section class="widget">
+					
+					<h3 class="widgetTitle">{text:Bandcamp Title}</h3>
+					
+					{block:IfSidebarItemsInBoxes}<div class="widgetMain">{/block:IfSidebarItemsInBoxes}
+					
+					{block:IfShowAlbumArtworkInBandcampWidget}
+						{block:IfAlbumArtworkImage}
+							<div class="albumArt"><img src="{image:Album Artwork}" /></div>
+						{/block:IfAlbumArtworkImage}
+					{/block:IfShowAlbumArtworkInBandcampWidget}
+					
+					{text:Bandcamp Embed Code}
+					{block:IfSidebarItemsInBoxes}</div>{/block:IfSidebarItemsInBoxes}
+		
+				</section> 	 	 	   
+				
+			{/block:IfBandcampEmbedCode}
+			<!-- END BANDCAMP WIDGET -->
+			
+			<!-- SONGKICK WIDGET -->
+			{block:IfSongkickArtistID}
+			{block:IfNotBandsInTownArtistName}	
+				<section class="widget">
+					
+					<h3 class="widgetTitle">{text:Songkick Title}</h3>
+					
+					{block:IfSidebarItemsInBoxes}<div class="widgetMain">{/block:IfSidebarItemsInBoxes}
+					
+					<div class="songkickGigs">
+					
+						<ul></ul>
+					
+					
+					<a href="http://www.songkick.com" class="songkickAttr" target="_blank">Concerts by Songkick</a>
+					
+
+					</div>
+					{block:IfSidebarItemsInBoxes}</div>{/block:IfSidebarItemsInBoxes}
+		
+				</section>
+			{/block:IfNotBandsInTownArtistName}
+			{/block:IfSongkickArtistID}
+			<!-- END SONGKICK WIDGET -->
+			
+			<!-- START BANDS IN TOWN WIDGET -->
+			{block:IfBandsInTownArtistName}
+			{block:IfNotSongkickArtistID}
+				<section class="widget">
+					
+					<h3 class="widgetTitle">{text:Bands In Town Title}</h3>
+					
+					{block:IfSidebarItemsInBoxes}<div class="widgetMain">{/block:IfSidebarItemsInBoxes}
+					<div class="bandsInTownGigs">
+	
+						<script type='text/javascript' src='http://www.bandsintown.com/javascripts/bit_widget.js'></script>
+						<script type='text/javascript'>
+						
+						var widget = new BIT.Widget({
+							"artist": "{text:Bands In Town Artist Name}",
+							{block:IfNumberofBandsInTownShowsonSidebar}
+							"display_limit" : {text:Number of Bands In Town Shows on Sidebar},
+							{/block:IfNumberofBandsInTownShowsonSidebar}
+							"force_narrow_layout" : true
+							});
+						
+						widget.insert_events();
+						
+						</script>
+						
+					</div>
+					{block:IfSidebarItemsInBoxes}</div>{/block:IfSidebarItemsInBoxes}
+		
+				</section>
+			{/block:IfNotSongkickArtistID}
+			{/block:IfBandsInTownArtistName}
+			<!-- END BANDS IN TOWN WIDGET -->
+			
+			<!-- INSTAGRAM WIDGET -->
+			{block:IfInstagramAccessToken}
+			<section class="widget instagram-widget">
+					
+					<h3 class="widgetTitle">{text:Instagram Title}</h3>
+					
+					
+					{block:IfSidebarItemsInBoxes}<div class="widgetMain">{/block:IfSidebarItemsInBoxes}
+					<div class="gramHolder">
+						{block:IfShowInstagramThumbnails}
+						<ul id="gramImages"></ul>
+						{/block:IfShowInstagramThumbnails}
+						
+						{block:IfNotShowInstagramThumbnails}
+						<div id="gramImages"></div>
+						{/block:IfNotShowInstagramThumbnails}
+					</div>
+					{block:IfSidebarItemsInBoxes}</div>{/block:IfSidebarItemsInBoxes}
+			
+			</section>
+			{/block:IfInstagramAccessToken}
+			<!-- END INSTAGRAM WIDGET -->
+			
+			<!-- TWITTER WIDGET -->
+			{block:IfTwitterWidgetCode}
+			<section class="widget twitter">
+			
+				<h3 class="widgetTitle">{text:Twitter Title}</h3>
+				
+				{block:IfSidebarItemsInBoxes}<div class="widgetMain">{/block:IfSidebarItemsInBoxes}
+				{text:Twitter Widget Code}
+				{block:IfSidebarItemsInBoxes}</div>{/block:IfSidebarItemsInBoxes}
+
+			</section>
+			{block:IfTwitterWidgetCode}
+			<!-- END TWITTER WIDGET -->
+			
+			<!-- FLICKR WIDGET -->
+			{block:IfFlickrID}
+			<section class="widget">
+					
+					<h3 class="widgetTitle">{text:Flickr Title}</h3>
+
+					{block:IfSidebarItemsInBoxes}<div class="widgetMain">{/block:IfSidebarItemsInBoxes}
+					<div id="fImages"></div>
+					{block:IfSidebarItemsInBoxes}</div>{/block:IfSidebarItemsInBoxes}
+			
+			</section>
+			{/block:IfFlickrID}
+			<!-- END FLICKR WIDGET -->
+			
+			<!-- BIG CARTEL WIDGET -->
+			{block:IfBigCartelUsername}
+			<section class="widget">
+					
+					<h3 class="widgetTitle">{text:Big Cartel Title}</h3>
+					
+					{block:IfSidebarItemsInBoxes}<div class="widgetMain">{/block:IfSidebarItemsInBoxes}
+					<div id="bigCartel"><ul></ul></div>
+					{block:IfSidebarItemsInBoxes}</div>{/block:IfSidebarItemsInBoxes}
+			
+			</section>
+			{/block:IfBigCartelUsername}
+			<!-- END BIG CARTEL WIDGET -->
+			
+			<!-- MAILCHIMP SIGN UP FORM -->
+			{block:IfMailChimpSignUpEmbedCode}
+		
+				<section class="widget">
+						
+						<h3 class="widgetTitle">{text:Mailchimp Title}</h3>
+						
+						{block:IfSidebarItemsInBoxes}<div class="widgetMain">{/block:IfSidebarItemsInBoxes}
+						{text:Mailchimp Sign Up Embed Code}
+						{block:IfSidebarItemsInBoxes}</div>{/block:IfSidebarItemsInBoxes}
+						
+						<style type="text/css">
+						
+						#mc_embed_signup form {
+						display: block;
+						position: relative;
+						text-align: left;
+						padding: 2px 0 10px 0;
+						}
+						
+						#mc_embed_signup label {
+						display: none;
+						}
+						
+						#mc_embed_signup input.email {
+						display: block;
+						padding: 8px 0;
+						margin: 0 4% 10px 0;
+						text-indent: 5px;
+						width: 99%;
+						min-width: 130px;
+						}
+						
+						#mc_embed_signup input.email {
+						display: block;
+						padding: 6px 0;
+						margin: 0 4% 10px 0;
+						text-indent: 5px;
+						width: 99%;
+						min-width: 130px;
+						color: {color:Sidebar Text};
+						}
+						
+						aside.boxes #mc_embed_signup input.email {
+							background-color: {color:Sidebar Box Background};
+						}
+						
+						#mc_embed_signup input {
+						border: 1px solid {color:Sidebar Border};
+						-webkit-appearance: none;
+						}
+						
+						#mc_embed_signup {
+						font: inherit !important;
+						background-color: {color:Background};
+						}
+						
+						#mc_embed_signup input:invalid, #mc_embed_signup textarea:invalid {
+							background-color: {color:Background};
+						}
+
+						#mc_embed_signup ::-webkit-input-placeholder { /* WebKit browsers */
+						    color: {color:Secondary Text};
+						}
+						#mc_embed_signup :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+						    color: {color:Secondary Text};
+						}
+						#mc_embed_signup ::-moz-placeholder { /* Mozilla Firefox 19+ */
+						    color: {color:Secondary Text};
+						}
+						#mc_embed_signup :-ms-input-placeholder { /* Internet Explorer 10+ */
+						    color: {color:Secondary Text};
+						}
+						
+						#mc_embed_signup .button { 
+						/*font-family: font-family: {font:Title} !important;*/
+						background:none;
+						background-color:none;
+						font-weight:bold;
+						font-size:13px;
+						
+						text-transform:uppercase;
+						color: {color:Sidebar Link};
+						}
+						
+						#mc_embed_signup input.button {
+							width:auto !important;
+							min-width: 0px !important;
+						
+						}
+						
+						#mc_embed_signup .button:hover { 
+							color: {color:Sidebar Link Hover};
+						}
+						
+						</style>
+				
+				</section>
+	
+			{/block:IfMailChimpSignUpEmbedCode}
+			<!-- MAILCHIMP SIGN UP FORM -->
+			
+			<!-- FACEBOOK WIDGET -->
+			{block:IfShowFacebookLikeBoxInSidebar}
+			{block:IfFacebookURL}
+		
+				<section class="widget">	
+					<h3 class="widgetTitle">{text:Facebook Title}</h3>
+					{block:IfSidebarItemsInBoxes}<div class="widgetMain">{/block:IfSidebarItemsInBoxes}
+					{block:IfNotShowFullFacebookActivityFeedInSidebar}
+					<div class="fb-like" data-href="{text:Facebook URL}" data-send="false" data-width="150" data-show-faces="true"></div>					
+					{/block:IfNotShowFullFacebookActivityFeedInSidebar}
+					
+					{block:IfShowFullFacebookActivityFeedInSidebar}
+					<div class="fbBoxWrapper"><div class="fb-like-box" data-href="{text:Facebook URL}" data-width="305" data-height="485" data-show-faces="true" data-stream="true" data-header="false"></div></div>
+					{/block:IfShowFullFacebookActivityFeedInSidebar}
+					{block:IfSidebarItemsInBoxes}</div>{/block:IfSidebarItemsInBoxes}
+				</section> 	 	 	   
+			{/block:IfFacebookURL}
+			{/block:IfShowFacebookLikeBoxInSidebar}
+			<!-- END FACEBOOK WIDGET -->
+			
+			<section class="widget footer">	
+				{block:IfSidebarItemsInBoxes}<div class="widgetMain">{/block:IfSidebarItemsInBoxes}
+				<ul class="linksSidebar">
+					{block:IfCopyrightText}<li class="copyright">&copy; <span></span> {text:Copyright Text} </li>{/block:IfCopyrightText}
+					{block:IfNotCopyrightText}<li class="copyright">&copy; <span></span> {title} </li>{/block:IfNotCopyrightText}
+					<li><a href="/archive" class="archive">Archive</a>&nbsp;|&nbsp;<a href="{RSS}" class="rss">RSS</a></li>
+				</ul>
+				{block:IfSidebarItemsInBoxes}</div>{/block:IfSidebarItemsInBoxes}
+				
+			</section>
+			
+
+			
+			
+        		
+        	
+        	</aside>
+        
+        </section> 	 	 	   
+        
+        <!--
+        <footer id="footer">
+            
+            {block:IndexPage}
+            
+                {block:PreviousPage}
+                    <a href="{PreviousPage}">&#171; Previous</a>
+                {/block:PreviousPage}
+    
+                {block:NextPage}
+                    <a href="{NextPage}">Next &#187;</a>
+                {/block:NextPage}
+
+            {/block:IndexPage}
+
+            <a href="/archive">Archive</a>
+            
+        </footer> 	 	 	   
+        -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"><\/script>')</script>
+		<script src="http://static.tumblr.com/qxrkgx6/KVdmqc7rj/plugins.min.js"></script>
+
+		<script type="text/javascript" src="http://static.tumblr.com/qxrkgx6/cP2mpq72t/widgets.min.js"></script>
+		
+		<script>
+		$(function() {
+			
+			//soundcloud
+			{block:IfShowSoundcloudPlayer}
+			{block:IfSoundcloudUsername}
+			
+				$.Soundcloud("{text:Soundcloud Username}");
+			
+			{/block:IfSoundcloudUsername}
+			{/block:IfShowSoundcloudPlayer}
+			
+			//header stretch
+			{block:ifStretchHeaderBackground}
+				$("#headerImage").backstretch("{image:Header Background}");
+					
+			{/block:ifStretchHeaderBackground}
+			
+			//songkick
+			{block:IfSongkickArtistID}
+			
+				var showsPageURL = "";
+				var artistName = "";
+				
+				{block:IfUpcomingShowsPageURL}
+					showsPageURL = "{text:Upcoming Shows Page URL}";
+				{/block:IfUpcomingShowsPageURL}
+				
+				{block:IfArtistName}
+					artistName = "{text:Artist Name}";			
+				{/block:IfArtistName}
+				
+				$.Songkick("{text:Songkick Artist ID}", showsPageURL, artistName);
+				
+			{/block:IfSongkickArtistID}
+			
+			//instagram
+			{block:IfInstagramAccessToken}
+			
+				var ifThumbs = false;
+			
+				{block:IfShowInstagramThumbnails}
+					ifThumbs = true;
+				{/block:IfShowInstagramThumbnails}
+	
+	    		$.Instagram("{text:Instagram Access Token}", ifThumbs);
+	    		
+	    		instaPageLength = $('#instagram-page').length;
+	    	
+		    	if(instaPageLength > 0){
+		    		$.InstaPage("{text:Instagram Access Token}");
+		    	}
+    		
+    		{/block:IfInstagramAccessToken}
+    		
+    		{block:IfFlickrID}
+
+	    		$("#fImages").flickr({ id: "{text:Flickr ID}" });
+	    	
+	    	{/block:IfFlickrID}
+	    	
+	    	{block:IfFlickrPhotosetID}
+    	
+		    	flickrPageLength = $('#flickr-page').length;
+		    	
+		    	if(flickrPageLength > 0){
+		    		$.FlickrPage("{text:Flickr Photoset ID}");
+		    	}
+	    	
+	    	{/block:IfFlickrPhotosetID}
+	    	
+	    	{block:IfBigCartelUsername}
+			
+				$.Bigcartel("{text:Big Cartel Username}");
+				
+			{/block:IfBigCartelUsername}
+		
+		});
+		
+		</script> 	 	 	   
+		
+		<script src="http://static.tumblr.com/qxrkgx6/EWEmr3pww/functions.min.js"></script>
+       
+
+       
+        {block:ifDisqusShortname}
+		<script type="text/javascript">
+		    var disqus_shortname = '{text:Disqus Shortname}';
+		     /*
+			(function() {
+				var s = document.createElement('script'); s.async = true;
+		        s.type = 'text/javascript';
+		        s.src = '//' + disqus_shortname + '.disqus.com/count.js';	
+		        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+			})();
+		    */
+		    $(function() {
+			    disComments();
+		    });
+		   
+		    
+		    function disComments() {
+		    	console.log("muppets");
+			    var s = document.createElement('script'); s.async = true;
+		        s.type = 'text/javascript';
+		        s.src = '//' + disqus_shortname + '.disqus.com/count.js';	
+		        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+		    }
+		   
+
+		</script>
+       {/block:ifDisqusShortname}
+        
+        <!-- GOOGLE PLUS ONE SCRIPT -->
+		<script type="text/javascript">
+		  (function() {
+		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		    po.src = 'https://apis.google.com/js/plusone.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  })();
+		</script>
+		<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+        {block:IfGoogleAnalyticsWebPropertyID}
+        <script>
+            var _gaq=[['_setAccount','{text:Google Analytics Web Property ID}'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+        {/block:IfGoogleAnalyticsWebPropertyID}
+        
+        <!-- twitter js -->
+        
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        
+
+        
+    </body>
+    <!--
+        This Tumblr Theme and all of its CSS, Javascript,
+        and media assets are subject to Tumblr's Terms of Service:
+    
+        http://www.tumblr.com/terms_of_service
+    -->
+</html>
