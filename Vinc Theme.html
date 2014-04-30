@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+
+<!--
+  Vincere Tumblr Theme v1.1
+  by Oliver A. Dionela [http://themeforest.net/user/oliverdionela/portfolio]
+-->
+
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{block:SearchPage} Search results for: {SearchQuery}{/block:SearchPage} {block:PostSummary}{PostSummary} | {/block:PostSummary}{Title}</title>
+    <meta name="description" content="{MetaDescription}">
+
+    <!-- Customization Metas -->
+    <meta name="text:Header Background Opacity" content="0.3"> 
+    <meta name="text:Tagline" content="">
+    <meta name="text:Tagline 2" content="">
+    <meta name="text:Branding Jump Link" content="Read Posts">
+    <meta name="text:About Title" content="">
+    <meta name="text:About Content" content="">
+    <meta name="text:About Widget" content="">
+    <meta name="text:Post Area Title" content="Posts">
+    <meta name="text:Pages Label" content="Pages">
+    <meta name="text:Categories Label" content="Browse by Categories">
+    <meta name="text:Category 1" content="">
+    <meta name="text:Category 2" content="">
+    <meta name="text:Category 3" content="">
+    <meta name="text:Category 4" content="">
+    <meta name="text:Category 5" content="">
+    <meta name="text:Category 6" content="">
+    <meta name="text:Category 7" content="">
+    <meta name="text:Category 8" content="">
+    <meta name="text:Category 9" content="">
+    <meta name="text:Ask Form Title" content="Contact Us">
+    <meta name="text:Footer Text" content="">
+    <meta name="text:Google Analytics ID" content="">
+    <meta name="text:Branding Height" content="800px">
+    <!-- Social -->
+    <meta name="text:Disqus Shortname" content="">
+    <meta name="text:Facebook URL" content="">
+    <meta name="text:Twitter URL" content="">
+    <meta name="text:Google Plus URL" content="">
+    <meta name="text:Pinterest URL" content="">
+    <meta name="text:Linkedin URL" content="">
+    <meta name="text:Dribbble URL" content="">
+    <meta name="text:Flickr URL" content="">
+    <meta name="text:Instagram URL" content="">
+    <meta name="text:Youtube URL" content="">
+    <meta name="text:Vimeo URL" content="">
+    <!-- Google web Font -->
+    <meta name="text:Google Font Headings" content="Montserrat">
+    <meta name="text:Google Font Body" content="Raleway">
+    <meta name="text:Body Font Weight" content="300">
+    <meta name="text:Headings Font Weight" content="700">
+    <!-- Images -->
+    <meta name="image:Logo" content="">
+    <meta name="image:Branding Background" content="">
+    <meta name="image:Single Post Header" content="">
+    <meta name="image:Menu Background" content="">
+    <meta name="image:Body Background" content="">
+    <!-- Conditionals -->
+    <meta name="if:Show About Section" content="1">
+    <meta name="if:Show Archive Link" content="1">
+    <meta name="if:Show Search Link" content="1">
+    <meta name="if:Show Ask Form Link" content="1">
+    <meta name="if:Show Post Date" content="1">
+    <meta name="if:Show Post Tags" content="1">
+    <meta name="if:Show Post Notes" content="1">
+    <meta name="if:Show Copyright" content="1">
+    <meta name="if:Menu Background Repeat" content="1">
+    <meta name="if:Body Background Repeat" content="1">
+    <!-- Colors -->
+    <meta name="color:Accent" content="#04a3ce">
+    <meta name="color:Hover" content="#7ed6f3">
+    <meta name="color:Body Text Color" content="#333333">
+    <meta name="color:Headings Text Color" content="#222222">
+    <meta name="color:Body Background" content="#ffffff">
+    <meta name="color:Logo Text Color" content="#ffffff">
+    <meta name="color:Branding Background Color" content="#232323">
+    <meta name="color:Branding Text Color" content="#ffffff">
+    <meta name="color:Posts Wrapper Background Color" content="#f2f2f2">
+    <meta name="color:Posts Background Color" content="#ffffff">
+    <meta name="color:Post Title Background Color" content="#ffffff">
+    <meta name="color:Menu Text Color" content="#ffffff">
+    <meta name="color:Menu Title Text Color" content="#ffffff">
+    <meta name="color:Menu Background color" content="#333333">
+    <meta name="color:Menu Hover" content="#7ed6f3">
+    <meta name="color:Single Post Header Background" content="#232323">
+    <meta name="color:Single Post Wrapper" content="#f2f2f2">
+    <meta name="color:Single Post Background" content="#ffffff">
+    <meta name="color:Footer Background" content="#ffffff">
+    <meta name="color:Footer Text Color" content="#222222">
+    <meta name="color:Modal Background" content="#ffffff">
+
+    <link rel="stylesheet" href="http://static.tumblr.com/wasrois/T5Jn3gwbx/foundation.min.css" />
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    {block:IfGoogleFontHeadings}<link href='http://fonts.googleapis.com/css?family={text:Google Font Headings}' rel='stylesheet' type='text/css'>{/block:IfGoogleFontHeadings}
+    {block:IfGoogleFontBody}<link href='http://fonts.googleapis.com/css?family={text:Google Font Body}' rel='stylesheet' type='text/css'>{/block:IfGoogleFontBody}
+    <script src="http://static.tumblr.com/wasrois/T80n3gxrr/modernizr.js"></script>
+    <!-- Favicon / RSS -->
+    <link rel="shortcut icon" href="{Favicon}">
+    <link rel="alternate" type="application/rss+xml" name="RSS" href="{RSS}"/>
+
+    <style>
+      body { font-family: '{text:Google Font Body}', sans-serif; font-weight: {text:Body Font Weight}; color:{color:Body Text Color}; background: {color:Body Background} {block:IfBodyBackgroundImage}url('{image:Body Background Image}'){/block:IfBodyBackgroundImage};
+          {block:IfBodyBackgroundRepeat}background-repeat: repeat;{/block:IfBodyBackgroundRepeat}
+        {block:IfNotBodyBackgroundRepeat}background-repeat: no-repeat;{/block:IfNotBodyBackgroundRepeat}  
+    }
+    h1, h2, h3, h4, h5, h6 { font-family: '{text:Google Font Headings}', sans-serif; font-weight: {text:Headings Font Weight}; color: {color:Headings Text Color}; }
+    a{-webkit-transition: all .2s linear; -moz-transition: all .2s linear; -m-transition: all .2s linear; -o-transition: all .2s linear; transition: all .2s linear;}
+    a { color:{color:Accent}; }
+    a:hover, a:focus{ color: {color:Hover};}
+    .button, button.button {background: {color:Accent};}
+     button:hover, button:focus, .button:hover, .button:focus {background: {color:Hover};}
+    pre {background: #f2f2f2; padding: 10px; margin-left: 10px;}
+    [class*="column"] + [class*="column"]:last-child { float: left; }
+    .main-header { position: absolute; width: 100%; padding: 35px 0 20px 0; z-index: 999; background: rgba(0,0,0,{text:Header Background Opacity});}
+    .branding { width: 100%; min-height: {text:Branding Height}; height: {text:Branding Height}; background: {color:Branding Background Color} {block:IfBrandingBackgroundImage}url("{image:Branding Background}"){/block:IfBrandingBackgroundImage}; -moz-background-size: cover; -webkit-background-size: cover; background-size: cover; display: table; position: relative; overflow: hidden;}
+    .logospace h1 { text-transform: uppercase; font-size: 1.2em;}
+    .logospace h1 a { color: {color:Logo Text Color};}
+    .toggle-button { text-align: right; padding-top: 3px; }
+    .hero-unit { text-align: center; color: {color:Branding Text Color}; display: table-cell; vertical-align: middle; }
+    .hero-unit h1 { color: {color:Branding Text Color}; text-transform: uppercase; }
+    .jump-button { display: inline-block; border: 2px solid {color:Branding Text Color}; margin-top: 2em; padding: 1em; color: {color:Branding Text Color}; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+    .jump-button:hover { border-color: {color:Accent}; background: {color:Accent}; color: {color:Branding Text Color}; }
+    .divider, .divider-block, .divider-white { background: {color:Headings Text Color}; width: 50px; height: 2px; margin: 1em 0; display: inline-block; }
+    .divider-block { display: block; }
+    .divider-white { background: {color:Branding Text Color}; }
+    /*Post styles*/
+    .page-section { padding: 6em 0; }
+    .portfolio-wrap { background: {color:Posts Wrapper Background Color}; margin-top: 2em; }
+    .portfolio { padding-top: 3em; }
+    #portfolio-item { position: relative; margin-bottom: 1.5em; height: 250px; overflow: hidden; background: {color:Posts Background Color}; }
+    #portfolio-item img { text-align: center; max-width: none; position: absolute; display: block; width: 650px; left: -200px; top: -106px; }
+    #portfolio-item .post-info { position: absolute; width: 100%; height: 100%; display: block; ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); opacity: 0; padding: 1em; -webkit-transition: all .2s ease-in-out; -ms-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out;-o-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
+    #portfolio-item .post-info:hover{ opacity: 1; ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";  filter: alpha(opacity=100);}
+    #portfolio-item .post-info h4 { background: {color:Post Title Background Color}; display: inline-block; padding: 5px 10px; color: {color:Headings Text Color}; font-family: '{text:Google Font Headings}', sans-serif; font-weight: {text:Headings Font Weight}; font-size: 16px; margin-bottom: 0;}
+    #portfolio-item .post-info p, .post-info h1, .post-info h2, .post-info h3, .post-info h5, .post-info h6, .post-info ul, .post-info ol, .post-info blockquote  {display: none;}
+    #portfolio-item a small { background: {color:Post Title Background Color}; display: inline-block; padding: 5px 10px; color: {color:Headings Text Color}; }
+    .inner { padding: 1em;}
+    /*Menu Styles*/
+    .right-off-canvas-menu { padding:1em; 
+        background: {color:Menu Background Color} {block:IfMenuBackgroundImage}url('{image:Menu Background}'){/block:IfMenuBackgroundImage};
+        {block:IfMenuBackgroundRepeat}background-repeat: repeat;{/block:IfMenuBackgroundRepeat}
+        {block:IfNotMenuBackgroundRepeat}background-repeat: no-repeat;{/block:IfNotMenuBackgroundRepeat}
+    }
+    ul.off-canvas-list { margin-top: 35px; font-size: 13px;}
+    ul.off-canvas-list li label { font-family: '{text:Google Font Headings}', sans-serif; display: block; color: {color:Menu Title Text Color};background: none; border:none; padding-left:9px; padding-top: 2em;}
+    ul.off-canvas-list li a {color: {color:Menu Text Color};border:none;-webkit-transition: all .2s linear; -moz-transition: all .2s linear; -m-transition: all .2s linear; -o-transition: all .2s linear; transition: all .2s linear;}
+    ul.off-canvas-list li a:hover {color: {color:Menu Hover}; background:none;}
+    #infscr-loading, #load-more { clear: both; padding: 2em 0; text-align: center; background: none; }
+    /*Single post  styles*/
+    .single-post-header { width: 100%; height: 200px; position: fixed; background: {color:Single Post Header Background} {block:IfSinglePostHeaderImage}url('{image:Single Post Header}'){/block:IfSinglePostHeaderImage}; background-position:center; }
+    .single-post-wrapper { background: {color:Single Post Wrapper}; padding-bottom: 3em; min-height: 600px; }
+    .single-post-wrapper .overlap{ padding-top: 9em; }
+    .single-post { background: {color:Single Post Background}; padding: 2em; }
+    .single-photo-wrapper, .single-clearer { margin-bottom: 2em; }
+    .pagination, .post-notes { width: 100%; padding: 2em 0; }
+    .pagination .next-post { float: left; }
+    .pagination .prev-post { float: right; }
+    /* Post Notes Styles */
+    ol.notes { list-style: none; margin-left: 0; }
+    ol.notes img { width: 32px; height: 32px; margin: 10px 10px 10px 0; }
+    ol.notes li.note blockquote { border: none; background: #f2f2f2; padding-bottom: 10px; }
+    /*Footer Styles*/
+    .main-footer { background: {color:Footer Background}; padding: 2em 0; }
+    .main-footer h6 { color: {color:Footer Text Color}; }
+    /*Social Buttons Styles*/
+    .social {margin-left: 0;}
+    .social li { list-style: none; display: inline-block; }
+    .social li a { margin: 5px; color: {color:Footer Text Color}; }
+    .social li a:hover { color: {color:Accent}; }
+    /*Modal Styles*/ dialog, .reveal-modal { background: {color:Modal Background}; }
+    /*Search Form styles*/
+    .searchbar { margin-top: 2em; padding: 0.53em; background: #f2f2f2; font-family: '{text:Google Font Headings}', sans-serif; font-size: 1.5em; font-style: italic; border: 1px solid #eee; width: 100%; }
+    /* Make soundcloud and spotify player responsive */
+    .soundcloud_audio_player { width:100%; height: auto; }
+    .spotify_audio_player { width: 100%; max-width: 100%; height: 80px; }
+    .audio-player {border:1px solid #ccc; margin-bottom: 1em; padding: 1em;} .audio-player ul {list-style: none;}
+    /**Tags Styles*/
+    .tags {margin-left: 0;}
+    .tags li {list-style: none;display: inline;}
+    .tags li > * { display: inline; } .tags li:after { color: #232323; } .tags span, .tags li { text-transform: capitalize;}
+    .tags li:first-child:after, .tags li:last-child:after {content: "";}
+    .tags li:after { content: ", "; }
+    /*Social Share buttons*/
+    .social-share {width:100%; height: 25px; display: block; position: relative; padding-bottom: 10px; opacity: 0.7; margin: 1em 0; clear:both;}
+    .social-share:hover {opacity: 1}
+    .twitter-share, .facebook-share, .gplus-share {float: left; width: 100px;}
+    @media only screen and (max-width: 40em) {
+        #portfolio-item img {
+            left: -100px;
+        }
+    }
+
+     {CustomCSS}
+    </style>
+  </head>
+
+  <body>
+
+    <div class="off-canvas-wrap">
+      <div class="inner-wrap"> 
+
+        <header class="main-header">
+
+          <div class="large-12 columns">
+            <div class="small-10 columns logospace">
+              <h1><a href="http://{Name}.tumblr.com">
+                {block:IfLogoImage}<img src="{image:Logo}" alt="{Title}">{/block:IfLogoImage}
+                {block:IfNotLogoImage}{Title}{/block:IfNotLogoImage}
+              </a></h1>
+            </div>
+
+            <div class="small-2 columns toggle-button">
+                <a class="right-off-canvas-toggle" href="#"><i class="fa fa-bars fa-2x"></i></a>
+            </div>
+          </div>
+
+        </header><!-- end main header -->
+
+        <!-- start off canvas navigation -->
+        <aside class="right-off-canvas-menu">
+          <ul class="off-canvas-list">
+            {block:IfPagesLabel}<li><label>{text:Pages Label}</label></li>{/block:IfPagesLabel}
+            {block:HasPages}{block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}{/block:HasPages}
+            {block:IfShowAskFormLink}<li><a href="#" data-reveal-id="askForm" data-reveal>{text:Ask Form Title}</a></li>{/block:IfShowAskFormLink}
+            {block:IfShowArchiveLink}<li><a href="/archive">Archive</a></li>{/block:IfShowArchiveLink}
+            {block:IfShowSearchLink}<li><a href="#" data-reveal-id="searchForm" data-reveal>{lang:Search}</a></li>{/block:IfShowSearchLink}
+            {block:IfCategoriesLabel}<li><label>{text:Categories Label}</label></li>{/block:IfCategoriesLabel}
+            {block:IfCategory1}<li><a href="/tagged/{text:Category 1}">{text:Category 1}</a></li>{/block:IfCategory1}
+            {block:IfCategory2}<li><a href="/tagged/{text:Category 2}">{text:Category 2}</a></li>{/block:IfCategory2}
+            {block:IfCategory3}<li><a href="/tagged/{text:Category 3}">{text:Category 3}</a></li>{/block:IfCategory3}
+            {block:IfCategory4}<li><a href="/tagged/{text:Category 4}">{text:Category 4}</a></li>{/block:IfCategory4}
+            {block:IfCategory5}<li><a href="/tagged/{text:Category 5}">{text:Category 5}</a></li>{/block:IfCategory5}
+            {block:IfCategory6}<li><a href="/tagged/{text:Category 6}">{text:Category 6}</a></li>{/block:IfCategory6}
+            {block:IfCategory7}<li><a href="/tagged/{text:Category 7}">{text:Category 7}</a></li>{/block:IfCategory7}
+            {block:IfCategory8}<li><a href="/tagged/{text:Category 8}">{text:Category 8}</a></li>{/block:IfCategory8}
+            {block:IfCategory9}<li><a href="/tagged/{text:Category 9}">{text:Category 9}</a></li>{/block:IfCategory9}
+          </ul>
+        </aside><!-- end off canvas navigation -->
+
+        <a class="exit-off-canvas"></a>
+
+        {block:IndexPage} 
+        <!-- start branding area-->
+        <div class="branding" {block:SearchPage}style="display: none;"{/block:SearchPage}{block:TagPage}style="display: none;"{/block:TagPage}>
+
+          <div class="hero-unit">
+
+            <div class="large-6 columns large-centered animated fadeInUp">
+
+              {block:IfTagline}<h1>{text:Tagline}</h1>{/block:IfTagline}
+              <div class="divider-white"></div>
+              {block:IfTagline2}<p>{text:Tagline 2}</p>{/block:IfTagline2}
+
+              {block:IfBrandingJumpLink}<a href="#down" class="jump-button radius">{text:Branding Jump Link}</a>{/block:IfBrandingJumpLink}
+
+            </div>
+
+          </div>
+
+        </div><!-- end branding area-->
+
+        <!-- start about section-->
+        {block:IfShowAboutSection}
+        <section id="down" class="page-section" {block:SearchPage}style="display: none;"{/block:SearchPage}{block:TagPage}style="display: none;"{/block:TagPage}>
+
+          <div class="row">
+            <div class="large-12 columns">
+              
+              <article class="large-6 columns">
+                {block:IfAboutTitle}<h3>{text:About Title}</h3>{/block:IfAboutTitle}
+
+                <div class="divider"></div>
+
+                {block:IfAboutContent}{text:About Content}{/block:IfAboutContent}
+              </article>
+
+              {block:IfAboutWidget}
+              <article class="large-6 columns">
+                <div class="divider"></div>
+                {text:About Widget}
+              </article>
+              {/block:IfAboutWidget}
+
+            </div>
+          </div>
+
+        </section>
+        {/block:IfShowAboutSection}
+        <!-- end about section-->
+
+        <!-- start portfolio -->
+        <section class="page-section portfolio-wrap">
+
+          <div class="row">
+            <div class="text-center">
+              <div {block:SearchPage}style="display: none;"{/block:SearchPage}{block:TagPage}style="display: none;"{/block:TagPage}>{block:IfPostAreaTitle}<h3>{text:Post Area Title}</h3>{/block:IfPostAreaTitle}</div>
+
+              {block:TagPage}<h3>{lang:Posts tagged Tag}</h3>{/block:TagPage}
+              {block:SearchPage}<h3>{lang:Search results for SearchQuery}</h3><p>{lang:SearchResultCount results}</p>{block:NoSearchResults}<h3>{lang:No results found}</h3>{/block:NoSearchResults}{/block:SearchPage}
+              <div class="divider"></div>
+            </div>
+
+              <div class="large-12 columns portfolio">
+
+                {block:Posts}
+                <article class="large-3 medium-6 columns">
+                  <div id="portfolio-item">
+                   {block:Photo}
+                    <img src="{PhotoURL-HighRes}">
+
+                    <a href="{Permalink}" class="post-info" title="{lang:Permalink for this post}">
+                        {block:Caption}{Caption}<br>{/block:Caption}
+                        {block:IfShowPostDate}{block:Date}<small>{lang:Posted on DayOfMonth Month Year}</small>{/block:Date}{/block:IfShowPostDate}
+                    </a>
+                   {/block:Photo}
+
+                   {block:Photoset}
+                    {block:Photos}<img src="{PhotoURL-HighRes}">{/block:Photos}
+
+                    <a href="{Permalink}" class="post-info" title="{lang:Permalink for this post}">
+                        {block:Caption}{Caption}<br>{/block:Caption}
+                        {block:IfShowPostDate}{block:Date}<small>{lang:Posted on DayOfMonth Month Year}</small>{/block:Date}{/block:IfShowPostDate}<br>
+                        <small>{PhotoCount} {lang:Photos}</small>
+                    </a>
+                   {/block:Photoset}
+
+                   {block:Video}
+                      {block:VideoThumbnail}<img src="{VideoThumbnailURL}">{/block:VideoThumbnail}
+
+                      <a href="{Permalink}" class="post-info" title="{lang:Permalink for this post}">
+                        <h4><i class="fa fa-play"></i></h4><br>
+                        {block:Caption}{Caption}<br>{/block:Caption}
+                        {block:IfShowPostDate}{block:Date}<small>{lang:Posted on DayOfMonth Month Year}</small>{/block:Date}{/block:IfShowPostDate}
+                    </a>
+                   {/block:Video}
+
+                   {block:Text}
+                      <div class="inner">
+                        {block:Title}<h4>{Title}</h4>{/block:Title}
+                        {block:IfShowPostDate}{block:Date}<p>{lang:Posted on DayOfMonth Month Year}</p>{/block:Date}{/block:IfShowPostDate}
+                        <div class="divider-block"></div>
+                        <a href="{Permalink}" title="{lang:Permalink for this post}">{lang:Read more}&hellip;</a>
+                      </div>
+                   {/block:Text}
+
+                   {block:Link}
+                      <div class="inner">
+                        <h4>{Name}</h4>
+                        {block:IfShowPostDate}{block:Date}<p>{lang:Posted on DayOfMonth Month Year}</p>{/block:Date}{/block:IfShowPostDate}
+                        <div class="divider-block"></div>
+                        <a href="{Permalink}" title="{lang:Permalink for this post}">{lang:Read more}&hellip;</a>
+                      </div>
+                   {/block:Link}
+
+                   {block:Quote}
+                      <div class="inner">
+                        <h5>&ldquo;{Quote}&rdquo;</h5>
+                        <div class="divider-block"></div>
+                        {block:Source}<a href="{Permalink}" title="{lang:Permalink for this post}">{Source}</a>{/block:Source}
+                      </div>
+                   {/block:Quote}
+
+                   {block:Chat}
+                      <div class="inner">
+                        {block:Title}<h4>{Title}</h4>{/block:Title}
+                        {block:IfShowPostDate}{block:Date}<p>{lang:Posted on DayOfMonth Month Year}</p>{/block:Date}{/block:IfShowPostDate}
+                        <div class="divider-block"></div>
+                        <a href="{Permalink}" title="{lang:Permalink for this post}">{lang:Read more}&hellip;</a>
+                      </div>
+                   {/block:Chat}
+
+                   {block:Audio}
+                      <div class="inner">
+                        <div style="display:none;">{block:AudioEmbed}{AudioEmbed-250}{/block:AudioEmbed}</div>
+                        <h4>{block:TrackName}{TrackName}{/block:TrackName} &mdash; {block:Artist}{Artist}{/block:Artist}</h4>
+                        {block:IfShowPostDate}{block:Date}<p>{lang:Posted on DayOfMonth Month Year}</p>{/block:Date}{/block:IfShowPostDate}
+                        <div class="divider-block"></div>
+                        <a href="{Permalink}" title="{lang:Permalink for this post}">{lang:Audio}</a>
+                      </div>
+                   {/block:Audio}
+                  </div>
+                </article>
+                {/block:Posts}
+              
+              </div>
+
+                {block:Pagination}
+                <div class="large-12 columns text-center" id="load-more">
+                  {block:NextPage}<a href="{NextPage}">{lang:More}<br><i class="fa fa-angle-down"></i></a>{/block:NextPage}
+                </div>{/block:Pagination}
+              {/block:IndexPage}
+
+
+              {block:PermalinkPage}
+                <div class="single-post-wrapper">
+                  <div class="single-post-header"></div>
+
+                  {block:Posts}
+                  <div class="row">
+                    <div class="large-10 columns large-centered overlap">
+                      <article class="single-post">
+                        {block:Text}
+                          <div class="text-center">
+                            {block:Title}<h1>{Title}</h1>{/block:Title}
+                            <div class="divider" style="display:inline-block;"></div>
+                          </div>
+
+                          {Body}
+                        {/block:Text}
+
+                        {block:Photo}
+                          <div class="text-center single-photo-wrapper">
+                            {LinkOpenTag}<img src="{PhotoURL-HighRes}">{LinkCloseTag}
+                          </div>
+
+                          {block:Caption}{Caption}{/block:Caption}
+                        {/block:Photo}
+
+                        {block:Photoset}
+                          <ul data-orbit data-options="variable_height:true;resume_on_mouseout:true;pause_on_hover:true;timer_speed: 7000;navigation_arrows:false;slide_number:false;timer:false">
+                            {block:Photos}
+                              <li><img src="{PhotoURL-HighRes}">
+                                {block:Caption}<div class="orbit-caption">{Caption}</div>{/block:Caption}
+                              </li>
+                            {/block:Photos}
+                          </ul>
+
+                          {block:Caption}{Caption}{/block:Caption}
+                        {/block:Photoset}
+
+                        {block:Video}
+                           <div class="flex-video widescreen vimeo">{VideoEmbed-700}</div>
+
+                           {block:Caption}{Caption}{/block:Caption}
+                        {/block:Video}
+
+                        {block:Link}
+                          <div class="text-center">
+                            <h1>{Name}</h1>
+                            <div class="divider"></div>
+                          </div>
+
+                          {block:Description}{Description}{/block:Description}
+                          <a href="{URL}">{lang:Link}&hellip;</i></a>
+                        {/block:Link}
+
+                        {block:Quote}
+                          <div class="text-center">
+                            <div class="divider"></div>
+                              <h3>&ldquo;{Quote}&rdquo;</h3>
+                            <div class="single-clearer"></div>
+                            {block:Source}<a href="{Permalink}">&mdash; {Source}</a>{/block:Source}
+                          </div>
+                        {/block:Quote}
+
+                        {block:Chat}
+                          <div class="text-center">
+                            {block:Title}<h1>{Title}</h1>{/block:Title}
+                            <div class="divider"></div>
+                          </div>
+
+                          <ul class="fa-ul">
+                            {block:Lines}<li class="{Alt}">
+                              <i class="fa-li fa fa-angle-right"></i> 
+                              {block:Label}<b>{Label}</b>{/block:Label} {Line}</li>{/block:Lines}
+                          </ul>
+                        {/block:Chat}
+
+                        {block:Audio}
+                          <div class="single-clearer">{block:AudioEmbed}{AudioEmbed}{/block:AudioEmbed}</div>
+
+                          <h4>{block:TrackName}{TrackName}{/block:TrackName} &mdash; {block:Artist}{Artist}{/block:Artist}</h4>
+
+                          {block:Caption}{Caption}{/block:Caption}
+                        {/block:Audio}
+
+                          <div class="clearer">
+                            <div class="divider"></div>
+                          </div>
+
+                         {block:RebloggedFrom}<p><i class="icon-reblog"></i> {lang:PostTypeNoun reblogged from ReblogRootName 2}</p>
+                         {/block:RebloggedFrom}
+                          {block:ContentSource}<p class="source"><i class="icon-folder-open"></i> {lang:Source}: 
+                          {block:NoSourceLogo}<a href="{SourceURL}" target="_blank">{SourceTitle}</a>{/block:NoSourceLogo}
+                          {block:SourceLogo}<a href="{SourceURL}"><img src="{BlackLogoURL}" width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" /></a></p>
+                          {/block:SourceLogo}{/block:ContentSource}
+
+                          {block:IfShowPostDate}{block:Date}<p>{lang:Posted on DayOfMonth Month Year}</p>{/block:Date}{/block:IfShowPostDate}
+
+                          {block:Date}
+                          <div class="social-share">
+                            <div class="facebook-share">
+                              <iframe src="//www.facebook.com/plugins/like.php?href={Permalink}&amp;width=100px&amp;height=21&amp;colorscheme=light&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;send=false&amp;appId=736290759731190" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100pxpx; height:21px;" allowTransparency="true"></iframe>
+                            </div>
+              
+                            <div class="twitter-share">
+                              <a href="https://twitter.com/share" class="twitter-share-button" data-url="{Permalink}" data-via="{TwitterUserName}">Tweet</a>
+                              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                            </div>
+              
+                            <div class="gplus-share">
+                              <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="120"></div>
+                              <script type="text/javascript">
+                                (function() {
+                                  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                  po.src = 'https://apis.google.com/js/plusone.js';
+                                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                                })();
+                              </script>
+                            </div>
+                          </div>
+                          {/block:Date}
+
+                          {block:IfShowPostTags}
+                          {block:HasTags}
+                          <ul class="tags">
+                            <li>{lang:Filed Under}:</li>
+                            {block:Tags}<li><a href="{TagURL}">{Tag}</a></li>{/block:Tags}
+                          </ul>
+                          {/block:HasTags}
+                          {/block:IfShowPostTags}
+
+                        {block:PermalinkPagination}
+                        <div class="pagination">
+                          {block:NextPost}<a href="{NextPost}" title="{lang:Next}" class="next-post">{lang:Next}</a>{/block:NextPost}
+                          {block:PreviousPost}<a href="{PreviousPost}" title="{lang:Previous}" class="prev-post">{lang:Previous}</a>{/block:PreviousPost}
+                        </div>
+                        {/block:PermalinkPagination}
+
+                        {block:Date}
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
+                        <noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
+                        {/block:Date}
+
+                        {block:IfShowPostNotes}
+                        {block:PostNotes}
+                          <div class="post-notes">
+                            <h6>{lang:Notes}</h6>
+                            {PostNotes-64}
+                          </div>
+                        {/block:PostNotes}
+                        {/block:IfShowPostNotes}
+                      </article>
+                    </div>
+                  </div>
+                  {/block:Posts}
+                </div>
+              {/block:PermalinkPage}
+          </div>
+
+        </section>
+
+        <footer class="main-footer">
+          <div class="large-10 columns large-centered text-center">
+            {block:IfShowCopyright}<h6>{Title} &copy; {CopyrightYears}</h6>{/block:IfShowCopyright}
+            {block:IfFooterText}<h6>{text:Footer Text}</h6>{/block:IfFooterText}
+            <div class="divider" style="color:{color:Footer Text Color};"></div>
+            <ul class="social">
+              {block:IfFacebookURL}<li><a href="{text:Facebook URL}" target="_blank"><i class="fa fa-facebook-square"></i></a></li>{/block:IfFacebookURL}
+              {block:IfTwitterURL}<li><a href="{text:Twitter URL}" target="_blank"><i class="fa fa-twitter-square"></i></a></li>{/block:IfTwitterURL}
+              {block:IfGooglePlusURL}<li><a href="{text:Google Plus URL}" target="_blank"><i class="fa fa-google-plus-square"></i></a></li>{/block:IfGooglePlusURL}
+              {block:IfPinterestURL}<li><a href="{text:Pinterest URL}" target="_blank"><i class="fa fa-pinterest-square"></i></a></li>{/block:IfPinterestURL}
+              {block:IfLinkedinURL}<li><a href="{text:Linkedin URL}" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>{/block:IfLinkedinURL}
+              {block:IfDribbbleURL}<li><a href="{text:Dribbble URL}" target="_blank"><i class="fa fa-dribbble"></i></a></li>{/block:IfDribbbleURL}
+              {block:IfFlickrURL}<li><a href="{text:Flickr URL}" target="_blank"><i class="fa fa-flickr"></i></a></li>{/block:IfFlickrURL}
+              {block:IfInstagramURL}<li><a href="{text:Instagram URL}" target="_blank"><i class="fa fa-instagram"></i></a></li>{/block:IfInstagramURL} 
+              {block:IfYoutubeURL}<li><a href="{text:Youtube URL}" target="_blank"><i class="fa fa-youtube-square"></i></a></li>{/block:IfYoutubeURL}
+              {block:IfVimeoURL}<li><a href="{text:Vimeo URL}" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>{/block:IfVimeoURL}     
+            </ul>
+          </div>
+        </footer>
+      </div><!-- end inner wrap-->
+    </div><!-- end off canvas wrap-->
+
+    <!-- START ASK FORM MODAL -->
+    <div id="askForm" class="reveal-modal medium" data-reveal>
+      <div class="text-center">{block:IfAskFormTitle}<h1>{text:Ask Form Title}</h1>{/block:IfAskFormTitle}</div>
+      <iframe frameborder="0" scrolling="auto" width="100%" height="200" src="http://www.tumblr.com/ask_form/{Name}.tumblr.com" style="background-color:transparent; overflow:hidden;" id="ask_form"></iframe>
+      <a class="close-reveal-modal">×</a>
+    </div>
+    <!-- END ASK FORM MODAL -->
+
+    <!-- start search form modal -->
+    <div id="searchForm" class="reveal-modal small" data-reveal>
+
+      <div class="text-center">
+        <h1>{lang:Search}</h1>
+      </div>
+
+      <form action="/search" method="get">
+
+        <input type="text" name="q" value="{SearchQuery}" placeholder="{lang:Search keywords}" class="searchbar"/>
+        <button type="submit" style="display:none"></button>
+  
+        <a class="close-reveal-modal">×</a>
+      </form>
+
+    </div>
+    <!-- end search form modal -->
+
+    <script src="http://static.tumblr.com/wasrois/yZFn3gwkg/jquery.js"></script>
+    <script src="http://static.tumblr.com/wasrois/nUon3gwif/foundation.min.js"></script>
+    <script src="http://static.tumblr.com/wasrois/1D7n4js84/vincere_plugins.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+
+    <script>
+      $(function(){
+        $('.portfolio').infinitescroll({
+            navSelector: '#load-more a',            
+            nextSelector: '#load-more a',   
+            itemSelector: '.portfolio article',         
+            behavior: 'twitter',
+            loading: {
+              finishedMsg: '<p>{lang:No more posts}</p>',
+              img: 'data:image/gif;base64,R0lGODlhAQABAHAAACH5BAUAAAAALAAAAAABAAEAAAICRAEAOw==',
+              msgText: '<i class="fa fa-plus fa-spin"></i>'
+            } 
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+      $.localScroll();
+      });
+    </script>
+
+    <!-- Disqus -->
+    {block:Date}
+    {block:IfDisqusShortname}
+    <script type="text/javascript">
+    //<![CDATA[
+    (function() {
+      var links = document.getElementsByTagName('a');
+      var query = '?';
+      for(var i = 0; i < links.length; i++) {
+      if(links[i].href.indexOf('#disqus_thread') >= 0) {
+          query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+      }
+      }
+      document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/get_num_replies.js' + query + '"></' + 'script>');
+    })();
+    //]]>
+    </script>
+    {/block:IfDisqusShortname}
+    {/block:Date}
+
+    {block:IfGoogleAnalyticsID}
+    <script>
+    //<![CDATA[
+      var _gaq=[['_setAccount','{text:Google Analytics ID}'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    //]]>
+    </script>
+    {/block:IfGoogleAnalyticsID}
+  </body>
+</html>
